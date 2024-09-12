@@ -1,5 +1,6 @@
 import 'package:chat_app/core/strings.dart';
 import 'package:chat_app/presentation/login/login_screen.dart';
+import 'package:chat_app/presentation/login/signup_screen.dart';
 import 'package:chat_app/presentation/splash_screen/splash_screen.dart';
 import 'package:go_router/go_router.dart';
 
@@ -8,4 +9,6 @@ final GoRouter goRouter = GoRouter(routes: [
   builder: (context,state) => const SplashScreen(),),
   GoRoute(path: AppStrings.loginScreenRoute,
   builder: (context,state) => const LoginScreen(),),
+   GoRoute(path: AppStrings.signUpScreenRoute,
+  builder: (context,state) => const SignupScreen(),),
 ]);
